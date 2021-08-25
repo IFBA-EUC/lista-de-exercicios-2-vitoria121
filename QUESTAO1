@@ -1,0 +1,47 @@
+/// QUESTAO 1: ///
+
+import java.util.Scanner;
+public class QUESTAO1 {
+
+	public static void main(String[] args) {
+		double a;
+		double b;
+		double c;
+		double delta= 0;
+		double raizdedelta= 0;
+		double raiz1;
+		double raiz2;
+		
+		Scanner digite = new Scanner(System.in);
+		
+		System.out.println("De acordo com a equaçaõ:  ax² + bx + cx = 0");
+		
+		System.out.println("Digite valor de a: ");
+		    a = digite.nextDouble();
+        System.out.println("Digite valor de b: ");
+	        b = digite.nextDouble();
+		System.out.println("Digite o valor de c: ");
+		    c =digite.nextDouble();
+		
+	if (a == 0) {
+		System.out.println("Valor de A invalido");
+	}
+	else {
+		delta = (b*b)- (4*a*c);
+		raizdedelta = (int)Math.sqrt(delta);
+	}
+	
+	if (delta> 0 ) {
+		raiz1 = ((-1)*b + raizdedelta)/(2*a);
+		raiz2 = ((-1)*b - raizdedelta)/(2*a);
+		System.out.printf("Raízes: %.1f e %.1f", raiz1, raiz2);
+	}else if (delta == 0) {
+	raiz1 = ((-1)*b + raizdedelta)/(2*a);
+	System.out.printf(" A Raíz é: %.1f ", raiz1); }
+
+	else {
+		System.out.printf("O valor de delta é negativo, portanto a equação não terá raízes reais");
+	}
+		
+		}
+		}
