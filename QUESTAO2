@@ -1,0 +1,40 @@
+/// QUESTAO 2: ///
+
+import java.util.Scanner;
+public class QUESTAO2 {
+        
+    public static void main(String[] args) {
+	Scanner digite = new Scanner(System.in);
+	
+	double c1;
+	double d1;
+	double e1;
+	
+	double c2;
+	double d2;
+	double e2;
+	
+	// Ponto A:
+	System.out.println("Digite o valor C do ponto A: ");
+	c1 = digite.nextDouble();
+	System.out.println("Digite o valor D do ponto A: ");
+	d1 = digite.nextDouble();
+	System.out.println("Digite o valor E do ponto A: ");
+	e1 = digite.nextDouble(); 
+	
+	// Ponto B:
+	System.out.println("Digite o valor C do ponto B: ");
+	c2 = digite.nextDouble();
+	System.out.println("Digite o valor D do ponto B: ");
+	d2= digite.nextDouble();
+	System.out.println("Digite o valor E do ponto B: ");
+	e2= digite.nextDouble(); 
+	
+	// Distância:
+	
+	double distanciAB = Math.sqrt(Math.pow(c2 - c1 , 2 ) + Math.pow(d2 - d1 , 2 ) + Math.pow(e2 - e1 , 2 ) ) ;
+	
+	System.out.printf("A distancia entre os dois pontos é: %.1f%n  ", +distanciAB);	
+	}
+
+}
