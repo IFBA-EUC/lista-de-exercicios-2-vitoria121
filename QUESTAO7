@@ -1,0 +1,24 @@
+/// QUESTÃO 7: ///
+
+// A SOLUÇÃO CORRETA É A DA LETRA "A".
+// A SOLUÇÃO INCORRETA PODE SER CORRIGIDA DA SEGUINTE FORMA:
+
+import java.util.Scanner;
+
+public class Codigo {
+    public static void main(String[] args) {
+        Scanner teclado = newScanner(System.in);
+	    int codigo;
+	
+	System.out.print("Digite o código: ");
+	codigo = teclado.nextInt();
+	
+	do {
+	    System.out.print("Informe o código: ");
+	    codigo = teclado.nextInt();
+	    System.out.println("Código: " + codigo);
+	    
+    	} while (codigo != -1 ); 
+	
+}
+}
