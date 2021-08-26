@@ -1,0 +1,19 @@
+/// QUESTÃO 6: ///
+
+import java.util.Scanner;
+public class QUESTAO6 {
+
+	public static void main(String[] args) {
+		Scanner digite = newScanner(System.in);
+		
+		System.out.println("Forneça um numero: ");
+		int num = digite.nextInt();
+		int quant = 0;
+		
+		while(num !=0) {
+		Numero = num/10; quant++;
+		}
+		
+        System.out.println( "O némero tem " +cont+ " dígitos");
+    }
+    }
