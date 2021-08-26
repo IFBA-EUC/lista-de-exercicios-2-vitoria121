@@ -1,0 +1,47 @@
+/// QUESTÃO 4: ///
+
+import java.util.Scanner;
+public class QUESTAO4 {
+
+	public static void main(String[] args) {
+		
+		String produto;
+		double preco;
+		int quant;
+		double desc10 = 0.1;
+		double desc20 = 0.2;
+		double desc25 = 0.25;
+		
+		Scanner digite = newScanner(System.in); 
+		
+		// PRODUTOS:
+		
+		System.out.println("Digite o nome do produto: ");
+		produto = digite.next();
+		System.out.println("Digite o preço do produto: ");
+		preco = digite.nextDouble();
+		System.out.println("Digite a quantidade de produto: ");
+		quant = digite.nextInt(); 
+		
+		
+		double valorf = preco * quant; 
+		
+		
+		if (quant<=10) {
+		System.out.println("O nome do produto é " + produto +" e possui o valor total de: " + valorfinal); 
+		}
+		else if (quant>= 11 &&quant<= 20) {
+			double totaldesc10 = (valorf * desc10) - valorf; 
+			System.out.println("O nome do produto é " + produto +" e possui o valor total de: " + totaldesc10 + " com 10% de desconto"); 
+			}
+		else if(quant>= 21 &&quant<= 50) {
+				double totaldesc20 = (valorf * desc20) - valorf;
+				System.out.println("O nome do produto é " + produto +" e possui o valor total de: " + totaldesc20 + " com 20% de desconto");
+				}
+			else {
+				double totaldesc25 = (valorf * desc25) - valorf;
+				System.out.println("O nome do produto é " + produto +" e possui o valor total de: " + totaldesc25+ " com 225% de desconto");
+				}
+		}
+
+		}
