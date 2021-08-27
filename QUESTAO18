@@ -1,0 +1,95 @@
+/// QUESTÃO 18: ///
+
+import java.util.Scanner;
+public class QUESTAO18 {
+
+	public static void main(String[] args) {
+		String[] un = newString[22];
+		String [] dezena= newString[10];
+		String [] centena = newString [11];
+		int y = 0;
+		
+		un[0] = "";
+		un[1] = "um";
+		un[2] = "dois";
+	    un[3] = "três";
+		un[4] = "quatro";
+		un[5] = "cinco";
+		un[6] = "seis";
+		un[7] = "sete";
+		un[8] = "oito";
+		un[9] = "nove";
+		un[10] = "dez";
+		un[11] = "onze";
+		un[12] = "doze";
+		un[13] = "treze";
+		un[14] = "quatorze";
+		un[15] = "quinze";
+		un[16] = "dezesseis";
+		un[17] = "dezessete";
+		un[18] = "dezoito";
+		un[19] = "dezenove";
+		
+		dezena[0] = "";
+		dezena[1] = "dez"; 
+		dezena[2] = "vinte";
+		dezena[3] = "trinta";
+		dezena[4] = "quarenta";
+		dezena[5] = "ciquenta";
+		dezena[6] = "Sessenta";
+		dezena[7] = "setenta";
+		dezena[8] = "oitenta";
+		dezena[9] = "noventa";
+		
+		centena[0] = "cento";
+		centena[1] = "cem";
+		centena[2] = "duzentos";
+		centena[3] = "trezentos";
+		centena[4] = "quatrocentos";
+		centena[5] = "quinhentos";
+		centena[6] = "seiscentos";
+		centena[7] = "setecentos";
+		centena[8] = "oitocentos";
+		centena[9] = "novecentos";
+		centena[10]= "mil";
+		
+		Scanner informe = new Scanner (System.in);
+		System.out.println("Informe um número: " );
+		int num = informe.nextInt();
+		if (num == 1000) {
+			System.out.println("Número fornecido:  " +centena[9] );
+		}
+		if (num<= 19) {
+			System.out.println("Número fornecido:  " +un[num]); }
+		
+		if (num> 19 &&num<= 90) {
+			int dezena2 = num / 10;
+			int unidade2 = num % 10;
+			if (unidade2 == 0) {
+			System.out.println("Número fornecido:  " +dezena[dezena2] ); }
+			else {
+				System.out.println("Números fornecidos:  " +dezena[dezena2] +" e "  +unidade[unidade2] );	} }
+	
+if (num>= 100 &&numero< 1000) {
+	int centena2 = num / 100;
+			int dezena3 = (num %100) / 10;
+			int unidade3 =  ((num%100)%10);
+			
+	if (centena2 ==1 &&dezena3 == 0 &&unidade3 == 0) {
+				System.out.println("Número fornecido:  " +centena[1] ); 	   }
+	else {
+		
+	}
+	if (dezena3 ==0) {
+					System.out.println("Números fornecidos:  " +centena[centena2]+ " e " +unidade[unidade3]);	
+				}
+	if (unidade == 0){
+		System.out.println("Números fornecidos:  " +centena[centena2]+ " e " +dezena[dezena3]); }
+	
+	else {
+		System.out.println("Números fornecidos:  " +centena[centena2]+ " e " +dezena[dezena3]+ " e " +unidade[unidade3]);
+	}
+	
+			}
+	}
+	}
