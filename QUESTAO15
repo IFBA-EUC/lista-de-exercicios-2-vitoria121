@@ -1,0 +1,36 @@
+/// QUESTÃO 15: ///
+
+import java.util.Scanner;
+public class QUESTAO15 {
+
+	public void media(double n1, double n2, double n3) {
+		mediaaluno = (n1 + n2 + n3) /3;
+		System.out.println("A média do aluno é: " +mediaaluno);
+	}
+	
+		public static void main(String[] args) {
+	
+	        Scanner digite = newScanner(System.in);
+	System.out.println("Informe a nota 1: ");
+	double n1 = digite.nextDouble();
+	System.out.println("Informe a nota 2: ");
+	double n2 = digite.nextDouble();
+	System.out.println("Informe a nota 3: ");
+	double n3 = digite.nextDouble(); 
+	
+	calculosq15= new QUESTAO15();
+	calculos.mediaaluno(n1,n2,n3);
+	exibição(mediaaluno);  }
+	
+	public static void exibição(double mediaaluno) {
+		if (mediaaluno<4) {
+			System.out.println("REPROVADO :("); }
+		elseif (mediaaluno>=4 &&media<=6) {
+			System.out.println("VERIFICAÇÃO SUPLEMENTAR :|");}
+		else {
+			System.out.println("APROVADO :D"); 
+	}
+
+	}
+
+	
