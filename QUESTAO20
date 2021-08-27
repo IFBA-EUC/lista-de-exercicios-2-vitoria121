@@ -1,0 +1,51 @@
+/// QUESTÃO 20: ///
+
+public class QUESTAO20 {
+	private String nome;
+	private int num;
+	
+	String get Nome() {
+		return nome;
+	}
+
+	void set Nome(String nome) {
+		this.nome = nome;
+	}
+
+
+	int get Numero() {
+		return num;
+	}
+
+	void set Numero(int num) {
+		this.num = numero;
+	}
+
+	public contato(String nome, int num) {
+		this.nome = nome;
+		this.num = numero;
+        	}
+        public void dados() {
+        	System.out.println("Nome: " +this.getNome()+" Número de telefone: " +this.getNumero());
+        }
+        }
+        
+        
+    public class agendatel {
+
+	    public static void main(String[] args) {
+		contato1 = new contato("Fernanda", 992096465);
+		contato2 = new contato("Mário",  998534677);
+		contato3 = new contato("Vitória", 997989751);
+		contato4 = new contato("Yasmim", 999994355);
+		
+		contato1.exibir();
+		contato2.exibir();
+		contato3.exibir();
+		contato4.exibir();
+		
+
+	}
+
+    }
+
