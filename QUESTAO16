@@ -1,0 +1,27 @@
+/// QUESTÃO 16: ///
+
+publicclass QUESTAO16 {
+	public static double segundos;
+	public static double minutos;
+	public static double horas;
+	
+	
+	public static void calculo (int x) {
+	int convSH = x /3600;
+	int convHM= ((x - (convSH * 3600)) / 60);
+	int convMS = x - (convSH * 3600) - (convHM * 60);
+	System.out.println ("Horas: " +conversaoSH+ "," +conversaoHM+ "minutos,"+conversaoMS+ "segundos" );	
+		
+	}
+	
+	public static void main(String[] args) {
+	 Scanner informe = new Scanner (System.in);
+	
+	System.out.println ("Informe os segundos: ");
+	int x = digite.nextInt(); 
+	calculosq16 = new QUESTAO16();
+calculos.calculo(a);	
+	}
+	
+}
+
